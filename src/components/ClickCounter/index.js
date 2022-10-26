@@ -8,9 +8,7 @@ class ClickCounter extends Component {
   state = {count: 0}
 
   onIncrement = () => {
-    this.setState(prevState => {
-      return {count: prevState.count + 1}
-    })
+    this.setState(prevState => ({count: prevState.count + 1}))
   }
 
   render() {
